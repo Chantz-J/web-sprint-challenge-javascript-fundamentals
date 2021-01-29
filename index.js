@@ -59,9 +59,6 @@ const zooAnimals = [
   */
 
   function animalNames(arr){
-    // const displayNames = []
-    // displayNames.push(arr.forEach(x => `name: ${x['animal_name']}, scientific: ${x['scientific_name']}`))    
-    // return displayNames
     const displayNames = []
     arr.forEach(x => { 
       displayNames.push(`name: ${x['animal_name']}, scientific: ${x['scientific_name']}`)
@@ -77,8 +74,9 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(arr){
+    const newArr = arr.map(x => x['animal_name'].toLowerCase())
+    return newArr
   }
   
   
